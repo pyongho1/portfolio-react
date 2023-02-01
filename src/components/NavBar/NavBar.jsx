@@ -4,7 +4,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav>
-      <Link className="menuList" to="/">
+      <Link className="logo" to="/">
         Yong Park
       </Link>
       <ul>

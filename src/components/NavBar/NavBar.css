@@ -8,8 +8,17 @@ nav {
 
 li {
   color: white;
+  list-style-type: none;
 }
 
 .menuList {
   color: white;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
 }
