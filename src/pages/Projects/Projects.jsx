@@ -1,4 +1,5 @@
 import "./Projects.css";
+import ProjectDetails from "../ProjectDetails/ProjectDetails";
 
 const Projects = ({ projectData }) => {
   return (
@@ -7,15 +8,7 @@ const Projects = ({ projectData }) => {
       <div className="projectCardContainer">
         {projectData.map((project) => (
           <>
-            <div class="property-card">
-              <a href={project.depURL}>
-                <img src="./resume.png" alt="projectImage" />
-              </a>
-              <div class="property-description">
-                <h5> {project.name} </h5>
-                <p>{project.desc}</p>
-              </div>
-            </div>
+            <ProjectDetails project={project} />
           </>
         ))}
       </div>
