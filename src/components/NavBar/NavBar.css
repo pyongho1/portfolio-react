@@ -3,7 +3,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #2e282a;
-  height: 50px;
+  height: 80px;
+  font-size: 20px;
 }
 
 li {
@@ -14,7 +15,7 @@ li {
 .menuList {
   color: white;
   text-decoration: none;
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 .menuList:hover {
