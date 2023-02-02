@@ -1,26 +1,23 @@
 import "./Projects.css";
 
-const Projects = () => {
+const Projects = ({ projectData }) => {
   return (
-    <div>
+    <div className="projectsContainer">
       <h1>PROJECTS</h1>
-      <div class="center">
-        <div class="property-card">
-          <a href="#">
-            <div class="property-image">
-              <div class="property-image-title">
-                {/* <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. --> */}
+      <div className="projectCardContainer">
+        {projectData.map((project) => (
+          <>
+            <div class="property-card">
+              <a href={project.depURL}>
+                <img src="./resume.png" alt="projectImage" />
+              </a>
+              <div class="property-description">
+                <h5> {project.name} </h5>
+                <p>{project.desc}</p>
               </div>
             </div>
-          </a>
-          <div class="property-description">
-            <h5> Card Title </h5>
-            <p>
-              Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More
-              Bingo. Lorem Ipum doth be hard.
-            </p>
-          </div>
-        </div>
+          </>
+        ))}
       </div>
     </div>
   );
