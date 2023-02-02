@@ -1,0 +1,22 @@
+.resumeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.resumeContainer img {
+  height: 300px;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.resumeContainer img:hover {
+  height: 330px;
+}
+
+.resumeContainer h4 {
+  margin-top: 20px;
+}
