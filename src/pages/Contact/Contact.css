@@ -1,0 +1,48 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactCard {
+  height: 500px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding-top: 40px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contactDesc {
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactDesc h3 {
+  margin-top: 20%;
+}
+
+.contactDesc img {
+  height: 100px;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contactDesc img:hover {
+  height: 110px;
+}
+
+.contactCard p {
+  font-size: 20px;
+  /* border: 1px solid; */
+}
