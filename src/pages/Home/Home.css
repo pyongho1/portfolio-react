@@ -1,13 +1,28 @@
-.container {
+.mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container img {
+.infoContainer img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
   border: 5px solid #17bebb;
   margin-top: 100px;
+}
+
+.iconContainer {
+  display: flex;
+}
+.iconContainer img {
+  height: 100px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  /* border: 1px solid; */
+}
+
+.iconContainer img:hover {
+  height: 110px;
 }
