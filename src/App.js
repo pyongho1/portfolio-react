@@ -6,10 +6,11 @@ import "./App.css";
 // import Resume from "./pages/Resume/Resume";
 // import Projects from "./pages/Projects/Projects";
 // import NavBar from "./components/NavBar/NavBar";
-// import { projectData } from "./data/data";
+import { projectData } from "./data/data";
 // import React, { useState } from "react";
 import React from "react";
 import { Link } from "react-scroll";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
 
 function App() {
   return (
@@ -51,7 +52,12 @@ function App() {
       </section>
       <section id="about" className="about-section">
         <h2>About Me</h2>
-        <p>Hi! I am a Software Engineer with experience in management, working in a team environement, and open to new challenges. I specialize in full-stack MERN/PERN [JavaScript, TypeScript, React.js, Express.js, Node.js, PostgreSQL, MongoDB and RESTful APIs.]</p>
+        <p>
+          Hi! I am a Software Engineer with experience in management, working in
+          a team environement, and open to new challenges. I specialize in
+          full-stack MERN/PERN [JavaScript, TypeScript, React.js, Express.js,
+          Node.js, PostgreSQL, MongoDB and RESTful APIs.]
+        </p>
         <p>
           Immigrating from Korea to the US and having to quickly learn English
           instilled in me a love for adapting new languages to different
@@ -64,11 +70,18 @@ function App() {
       <section id="portfolio" className="portfolio-section">
         <h2>Portfolio</h2>
         <p>Here are some of my recent projects:</p>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
+        {projectData.map((project) => (
+          <>
+            {/* <a href={project.depURL}>
+              <img src="" alt="projectImage" />
+            </a>
+            <div class="property-description">
+              <h5> {project.name} </h5>
+              <p>{project.desc}</p>
+            </div> */}
+            <ProjectCard project={project} />
+          </>
+        ))}
       </section>
       <section id="contact" className="contact-section">
         <h2>Contact Me</h2>
