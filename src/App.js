@@ -14,7 +14,6 @@ import { Link } from "react-scroll";
 function App() {
   return (
     <div className="App">
-      
       <nav className="navbar">
         <ul>
           <li>
@@ -52,9 +51,14 @@ function App() {
       </section>
       <section id="about" className="about-section">
         <h2>About Me</h2>
+        <p>Hi! I am a Software Engineer with experience in management, working in a team environement, and open to new challenges. I specialize in full-stack MERN/PERN [JavaScript, TypeScript, React.js, Express.js, Node.js, PostgreSQL, MongoDB and RESTful APIs.]</p>
         <p>
-          Hi, my name is [Your Name] and I am a [Your Profession]. I have
-          [Number of years] years of experience in [Your field of expertise].
+          Immigrating from Korea to the US and having to quickly learn English
+          instilled in me a love for adapting new languages to different
+          environments. That passion led me to coding, where I use those same
+          skills to build dynamic web-based applications. My experience also
+          includes working as a cafe manager, which taught me how to work
+          effectively in a team environment.
         </p>
       </section>
       <section id="portfolio" className="portfolio-section">
