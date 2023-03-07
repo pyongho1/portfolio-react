@@ -101,16 +101,21 @@ body {
   background-attachment: fixed;
 }
 
+.landing-section > img {
+  height: 250px;
+  border-radius: 50%;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  height: 900px;
+  height: auto;
 }
 
 .about-section > h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .about-section > p {
@@ -126,6 +131,39 @@ body {
   align-items: center;
   padding-top: 100px;
   height: auto;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+  text-align: center;
+  background-color: #303030;
+  color: #fff;
+}
+
+.contactMail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.contactDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactMail > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @keyframes gradient {

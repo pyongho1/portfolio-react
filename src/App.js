@@ -29,7 +29,12 @@ function App() {
           </li>
           <li>
             <Link to="portfolio" spy={true} smooth={true}>
-              Portfolios
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" spy={true} smooth={true}>
+              Resume
             </Link>
           </li>
           <li>
@@ -44,6 +49,10 @@ function App() {
           Hi there, 👋 <br />
           I'm Yong Park.
         </h1>
+        <img
+          src="https://media.licdn.com/dms/image/C5603AQGpjoopTdN3lQ/profile-displayphoto-shrink_800_800/0/1612428126745?e=1680739200&v=beta&t=ibltgJVe03quCf0bIwo28ny9ZNpPb5qbjDYJX97xwmg"
+          alt=""
+        />
         <h2>Fullstack Engineer</h2>
         <p>
           Specializing in Full-stack development: JavaScript | TypeScript |
@@ -68,7 +77,7 @@ function App() {
         </p>
       </section>
       <section id="portfolio" className="portfolio-section">
-        <h2>Portfolio</h2>
+        <h2>Projects</h2>
         <p>Here are some of my recent projects:</p>
         {projectData.reverse().map((project) => (
           <>
@@ -78,15 +87,18 @@ function App() {
       </section>
       <section id="contact" className="contact-section">
         <h2>Contact Me</h2>
-        <form>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" />
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" />
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        <div className="contactDesc">
+          <p>
+            I would love to hear from you! <br /> If you have any questions or
+            comments, let me know!
+          </p>
+          <h3>pyongho0306@gmail.com</h3>
+          <div className="contactMail">
+            <a href="mailto:pyongho0306@gmail.com">
+              <i class="fa-solid fa-at"></i>
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
