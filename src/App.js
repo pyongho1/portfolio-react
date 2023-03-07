@@ -70,15 +70,8 @@ function App() {
       <section id="portfolio" className="portfolio-section">
         <h2>Portfolio</h2>
         <p>Here are some of my recent projects:</p>
-        {projectData.map((project) => (
+        {projectData.reverse().map((project) => (
           <>
-            {/* <a href={project.depURL}>
-              <img src="" alt="projectImage" />
-            </a>
-            <div class="property-description">
-              <h5> {project.name} </h5>
-              <p>{project.desc}</p>
-            </div> */}
             <ProjectCard project={project} />
           </>
         ))}
