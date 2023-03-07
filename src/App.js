@@ -33,7 +33,7 @@ function App() {
             </Link>
           </li>
           <li>
-            <Link to="contact" spy={true} smooth={true}>
+            <Link to="resume" spy={true} smooth={true}>
               Resume
             </Link>
           </li>
@@ -49,10 +49,21 @@ function App() {
           Hi there, 👋 <br />
           I'm Yong Park.
         </h1>
-        <img
-          src="https://media.licdn.com/dms/image/C5603AQGpjoopTdN3lQ/profile-displayphoto-shrink_800_800/0/1612428126745?e=1680739200&v=beta&t=ibltgJVe03quCf0bIwo28ny9ZNpPb5qbjDYJX97xwmg"
-          alt=""
-        />
+        <div class="flip-card" tabIndex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="fa-regular fa-user"></i>
+              <h3>Hover!</h3>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQGpjoopTdN3lQ/profile-displayphoto-shrink_800_800/0/1612428126745?e=1680739200&v=beta&t=ibltgJVe03quCf0bIwo28ny9ZNpPb5qbjDYJX97xwmg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
         <h2>Fullstack Engineer</h2>
         <p>
           Specializing in Full-stack development: JavaScript | TypeScript |
@@ -84,6 +95,12 @@ function App() {
             <ProjectCard project={project} />
           </>
         ))}
+      </section>
+      <section id="resume" className="resume-section">
+        <h2>Resume</h2>
+        <a href="https://docs.google.com/document/d/1REybROf7CZ0VOvv0Ajx_WuCAevN5WTezVJFaFA2geHc/edit?usp=sharing">
+          <i class="fa-solid fa-file"></i> See My Resume
+        </a>
       </section>
       <section id="contact" className="contact-section">
         <h2>Contact Me</h2>
