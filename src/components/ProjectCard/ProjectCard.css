@@ -1,4 +1,15 @@
 .projectContainer {
   display: flex;
   flex-direction: column;
+  border: 1px solid;
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  padding: 10px 30px;
+  margin-bottom: 25px;
+}
+
+.projectContainer > a {
+  border: 1px solid;
+  padding: 10px 10px;
 }
