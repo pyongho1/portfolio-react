@@ -5,8 +5,12 @@ const ProjectCard = ({ project }) => {
     <div className="projectContainer">
       <h1>{project.name}</h1>
       <p>{project.desc}</p>
-      <a href={project.depURL}>LIVE APP</a>
-      <a href={project.github}>Github</a>
+      <div className="btnContainer">
+        <a className="liveApp" href={project.depURL}>LIVE APP</a>
+        <a className="github" href={project.github}>
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
     </div>
   );
 };

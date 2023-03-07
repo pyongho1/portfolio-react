@@ -1,15 +1,38 @@
 .projectContainer {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  justify-content: center;
+  background-color: white;
   width: 600px;
-  height: 350px;
+  height: 300px;
   align-items: center;
   padding: 10px 30px;
   margin-bottom: 25px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 5px;
 }
 
-.projectContainer > a {
+.btnContainer {
+  display: flex;
+}
+
+.liveApp {
   border: 1px solid;
   padding: 10px 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2dce89;
+  border-color: #2dce89;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+.github {
+  border: 1px solid;
+  padding: 10px 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #222;
+  border-color: #2dce89;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
 }
