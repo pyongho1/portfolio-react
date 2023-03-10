@@ -50,7 +50,7 @@ function App() {
           Hi there, 👋 <br />
           I'm Yong Park.
         </h1>
-        <div class="flip-card" tabIndex="0">
+        {/* <div class="flip-card" tabIndex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <i class="fa-regular fa-user"></i>
@@ -64,7 +64,7 @@ function App() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <h2>Fullstack Engineer</h2>
 
@@ -74,6 +74,11 @@ function App() {
       </section>
       <section id="about" className="about-section">
         <h2>About Me</h2>
+        <img
+          className="profilePic"
+          src="https://media.licdn.com/dms/image/C5603AQGpjoopTdN3lQ/profile-displayphoto-shrink_800_800/0/1612428126745?e=1680739200&v=beta&t=ibltgJVe03quCf0bIwo28ny9ZNpPb5qbjDYJX97xwmg"
+          alt=""
+        />
         <p>
           Hi! I am a Software Engineer with experience in management, working in
           a team environement, and open to new challenges. I specialize in
