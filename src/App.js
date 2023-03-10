@@ -11,6 +11,7 @@ import { projectData } from "./data/data";
 import React from "react";
 import { Link } from "react-scroll";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
+import Badges from "./components/Badges/Badges";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
             </div>
             <div class="flip-card-back">
               <img
+                className="profilePic"
                 src="https://media.licdn.com/dms/image/C5603AQGpjoopTdN3lQ/profile-displayphoto-shrink_800_800/0/1612428126745?e=1680739200&v=beta&t=ibltgJVe03quCf0bIwo28ny9ZNpPb5qbjDYJX97xwmg"
                 alt=""
               />
@@ -65,10 +67,10 @@ function App() {
         </div>
 
         <h2>Fullstack Engineer</h2>
-        <p>
-          Specializing in Full-stack development: JavaScript | TypeScript |
-          React.js | Node.js | Express.js | PostgreSQL | MongoDB
-        </p>
+
+        <div className="badgeContainer">
+          <Badges />
+        </div>
       </section>
       <section id="about" className="about-section">
         <h2>About Me</h2>

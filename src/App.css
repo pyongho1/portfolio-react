@@ -109,11 +109,17 @@ body {
   background-attachment: fixed;
 }
 
-.landing-section img {
+.profilePic {
   height: 300px;
   border-radius: 50%;
-  /* transition: transform 0.7s ease-in-out; */
 }
+
+.badgeContainer {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
 /* 
 .landing-section > img:hover {
   transform: rotate(360deg);
