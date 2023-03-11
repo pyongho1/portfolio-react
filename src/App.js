@@ -122,6 +122,11 @@ function App() {
               <i class="fa-solid fa-at"></i>
             </a>
           </div>
+          <button className="backToTopBtn">
+            <Link to="landing" spy={true} smooth={true}>
+              Back to top
+            </Link>
+          </button>
         </div>
       </section>
     </div>
