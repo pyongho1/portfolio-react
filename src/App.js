@@ -113,10 +113,22 @@ function App() {
             comments, let me know!
           </p>
           <h3>pyongho0306@gmail.com</h3>
-          <div className="contactMail">
-            <a href="mailto:pyongho0306@gmail.com">
-              <i class="fa-solid fa-at"></i>
-            </a>
+          <div className="contactContainer">
+            <div className="contactMail">
+              <a href="mailto:pyongho0306@gmail.com">
+                <i class="fa-solid fa-at"></i>
+              </a>
+            </div>
+            <div className="contactMail">
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div className="contactMail">
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
           </div>
           <button className="backToTopBtn">
             <Link to="landing" spy={true} smooth={true}>
