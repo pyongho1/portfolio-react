@@ -74,11 +74,7 @@ function App() {
       </section>
       <section id="about" className="about-section">
         <h2>About Me</h2>
-        <img
-          className="profilePic"
-          src="https://media.licdn.com/dms/image/C5603AQGpjoopTdN3lQ/profile-displayphoto-shrink_800_800/0/1612428126745?e=1680739200&v=beta&t=ibltgJVe03quCf0bIwo28ny9ZNpPb5qbjDYJX97xwmg"
-          alt=""
-        />
+        <img className="profilePic" src="/proPic.jpeg" alt="" />
         <p>
           Hi! I am a Software Engineer with experience in management, working in
           a team environement, and open to new challenges. I specialize in

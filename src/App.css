@@ -424,7 +424,7 @@ body {
 
 @media (max-width: 900px) {
   .navbar {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     width: auto;
@@ -433,9 +433,23 @@ body {
     border-bottom: 1px solid #3a3131;
     z-index: 1;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 15px; */
+    width: 100%;
+    /* width: auto; */
+    height: 100px;
+  }
+
+  .navbar ul {
+    /* padding-right: 100px; */
+    /* padding: 0 40px; */
+    display: flex;
     font-size: 15px;
+  }
+
+  .landing-section {
+    width: 100%;
   }
 }

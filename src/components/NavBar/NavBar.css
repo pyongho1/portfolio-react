@@ -27,3 +27,22 @@ li {
   text-decoration: none;
   padding-left: 20px;
 }
+
+
+@media (max-width: 900px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100px;
+    background-color: #303030;
+    border-bottom: 1px solid #3a3131;
+    z-index: 1;
+    display: flex;
+    /* justify-content: center; */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
