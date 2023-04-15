@@ -114,21 +114,20 @@ function App() {
           </p>
           <h3>pyongho0306@gmail.com</h3>
           <div className="contactContainer">
-            <div className="contactMail">
-              <a href="mailto:pyongho0306@gmail.com">
-                <i class="fa-solid fa-at"></i>
-              </a>
-            </div>
-            <div className="contactMail">
-              <a href="#">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <div className="contactMail">
-              <a href="#">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
+            <a href="mailto:pyongho0306@gmail.com" className="contactMail">
+              <i class="fa-solid fa-at"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/yong-ho-park/"
+              className="contactMail"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/pyongho1" className="contactMail">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
           <button className="backToTopBtn">
             <Link to="landing" spy={true} smooth={true}>
